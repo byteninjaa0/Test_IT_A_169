@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 style="color: green; text-align: center;">Dashboard</h1>
+    <h2 style="color: green; text-align: center;">Welcome Sohail</h2>
+    
+    <div style="">
+        <button onclick="fetchGitHubUsers()" >Fetch Top 10 GitHub Usernames</button>
+        <select id="sortOption" onchange="displayUsers()">
+            <option value="default">Default</option>
+            <option value="sorted">Sorted</option>
+        </select>
+    </div>
+
+    <ul id="userList" style="list-style: none;"></ul>
+    
+    <div style="margin-top: 20px;">
+        <button onclick="logout()" style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Logout</button>
+    </div>
+</body>
+</html>
